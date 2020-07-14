@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <title>Beauty_Space</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+	$(function() {
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+ 
+	$('#toTop').click(function() {
+ 	$('body,html').animate({scrollTop:0},800);
+ 
+	});
+ });
+ 
+</script>
+
+<main>
+    <section class="record">
+        <div class="lay"></div>
+        <div class="wrap">
+            <h1>Запись на приём</h1>
+            <form id="record" class="send" action="" method="post">
+                <label class="name">
+                    <input type="text" name="first_name" required placeholder="Ваше имя" autocomplete="off">
+                    <div class="icon"><a href="#submit"><img src="img/svg/user.svg" loading="lazy" alt="" width="18" height="18" ></a></div>
+                </label>
+                <label class="tel">
+                    <input type="tel" name="tel" required placeholder="Ваш телефон" autocomplete="off">
+                    <div class="icon"><a href=""><img src="img/svg/phone-2.svg" loading="lazy" alt="" width="18" height="18" ></a></div>
+                </label>
+                <label class="email">
+                    <input type="email" name="email" required placeholder="Ваш еmail" autocomplete="off">
+                    <div class="icon"><a href=""><img src="img/svg/mail.svg" loading="lazy" alt="" width="18" height="18" ></a></div>
+                </label>
+                <label class="service">
+                    <select name="" id="" size="1"  required >
+                        <option value="Выбор услуги" selected>Выбор услуги</option>
+                        <option value="Маникюр">Маникюр</option>
+                        <option value="Педикюр">Педикюр</option>
+                        <option value="Стрижка">Стрижка</option>
+                        <option value="Макияж">Макияж</option>
+                        <option value="Косметолог">Косметолог</option>
+                    </select>
+                    <div class="icon"><a class="blok1" href=""></a></div>
+                </label>
+                <label class="date">
+                	<input id="datetimepicker" type="text" name="datetime" value="" required placeholder="Выбор даты" autocomplete="off" format="Выбор даты">
+                	<script>
+					$('#datetimepicker').datetimepicker({
+  					  lang:'ru'
+					});
+					</script>
+                    <div class="icon"><a href=""><img src="img/svg/date.svg" loading="lazy" alt="" width="18" height="18" ></a></div>
+                    
+                </label>
+                <label class="text">
+                    <textarea rows="5" name="message" cols="30" required placeholder="Коментарии/пожелания"></textarea>
+                </label>
+                <div class="sub"> 
+                    <input class="submit" type="submit" name="submit" value="Отправить">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="vacancy">
+        <div class="lay"></div>
+           <div class="wrap">
+              <h1>Вакансии салона</h1>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsum nostrum beatae est vero distinctio unde, labore deserunt illum maiores sit, provident eligendi maxime quis. Minus ratione, officiis quas sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam architecto labore aperiam at iusto iste nulla praesentium tempora incidunt molestias nisi.</p>              
+            <div class="sub"> 
+                    <a class="submit" href="">Подробнее</a>
+            </div>
+          </div>
+    </section>
+
+    <section class="description">
+            <div class="wrap">
+             	<h1>О салоне</h1>
+				<div class="content">
+					<div class="text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta vitae sapiente expedita numquam consequatur similique repudiandae error magni deleniti molestias voluptatem in, cum at et corporis asperiores rem facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quaerat odio error eum, voluptate temporibus cumque illo inventore, iste quas aspernatur perferendis quos natus sunt modi, sit ipsa ipsam quo.</p><br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex esse ipsam iusto, voluptas quaerat odio iure doloribus commodi vero magni repellendus. Modi, sit ipsa ipsam quo.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusantium possimus dolor vero, alias magni, voluptatibus fugit cumque voluptas, soluta rerum, distinctio.</p>
+					</div>
+             		<div class="img"><img src="img/about.jpg" loading="lazy" alt=""></div>
+				</div>
+            </div>
+        </section>
+    <footer>
+        <div class="wrap">
+        	<div id="map"></div>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+			<script type="text/javascript">
+				var map;
+				function initMap() {		
+				map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 50.389656, lng: 30.462804},
+				zoom: 18,
+				styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]}]
+			});
+			var marker = new google.maps.Marker({
+	    	position: {lat: 50.389812, lng: 30.463018},
+	    	map: map,
+	    	title: 'Салон красоты Beauty_Space',
+			});
+			var contentString = '<div id="content">'+
+	      '<div id="siteNotice">'+
+	      '</div>'+
+	      '<h1 id="firstHeading" class="firstHeading">Салон красоты Beauty_Space</h1>'+
+	      '<div id="bodyContent">'+
+	      '<p><Бла-бла-бла, какой он классный</p>'+
+	      '<p><b>Веб-сайт:</b> <a href="http://www.Beauty_Space.com.ua/" target="_blank">Beauty_Space.com.ua</a>'+
+	      '</p>'+
+	      '</div>'+
+	      '</div>';
+	
+			var infowindow = new google.maps.InfoWindow({
+	   		content: contentString,
+	   		maxWidth: 400
+			});
+			marker.addListener('click', function() {
+			infowindow.open(map, marker);
+			});
+			}
+			</script>
+
+        	<div class="contact">
+        		<div class="logo"><img src="img/logo.png" width="200" height="100" loading="lazy" alt=""></div>
+        		<ul class="cont">
+        			<ul class="tel"><li><a class="bold20" href="+38 (073) 323 18 55">+38 (073) 323 18 55</a></li>
+        			<li>
+        				<ul class="socio">
+        					<li><a class="standart18" href="viber://chat?number=%2B380733231855">Viber</a></li>
+        					<li><a class="standart18" href="https://telegram.me/380733231855">Telegram</a></li>
+        					<li><a class="standart18" href="https://wa.me/380733231855">WhatsApp</a></li>
+        				</ul>
+        			</ul>
+        			<ul class="graf">
+        				<li class="standart18">График работы:</li>
+        				<li class="bold20">З Пн-Вс с 9-00 до 21-00</li>
+        			</ul>
+        			<ul class="adress">
+        				<li class="standart18">Наш адрес:</li>
+        				<li class="bold20">м.Київ Вільямса, 6-а</li>
+        			</ul>
+        			<ul class="ic">
+        				<li class="standart18">Мы в социальнх сетях:</li>
+        				<ul class="socicon">
+        					<li><a class="twit" href=""><img src="img/svg/tw-2.svg" loading="lazy" alt="" width="22" height="20"></a></li>
+        					<li><a href=""><img src="img/svg/insta-2.svg" width="22" height="20" loading="lazy" alt=""></a></li>
+        					<li><a href=""><img src="img/svg/fb-2.svg" width="22" height="20" loading="lazy" alt=""></a></li>
+        				</ul>
+					</ul>
+        		</ul>
+        	</div>
+        	
+        </div>
+
+   
+    <div class="context">Контакты</div>
+    <div class="copyright"><a href="">Copyright © 2020 Beauty space. Все права защищены</a></div>
+
+    </footer>
+    <div id="toTop" class="arrow-1"><div></div></div>
+	
+</main>
+
+</body>
+</html>
