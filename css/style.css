@@ -46,16 +46,11 @@ main {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	margin: 5% 11%;
+	margin: 90px 210px;
 	position: relative;
 }
 
 /* record */
-/*.record  {
-	margin: 5% 11%;
-	padding: 0 0 0 165px;
-	position: relative;
-}*/
 .record .lay {
 	position: absolute;
 	left: 0;
@@ -69,23 +64,23 @@ main {
 .record .wrap  {
 	max-width: 500px;
 	width: 100%;
-	padding: 5% 3% 4% 3%;
+	padding: 85px 45px 75px;
 	display: flex;
 	flex-direction: column;
 	background-color: #333333;
-	color: #ffffff;
-	margin-left: 8%;
+	margin-left: 160px;
 }
-.record .wrap h1 {
+.record .wrap h2 {
 	font:600 25px montserrat-bold, sans-serif;
 	text-transform: uppercase;
 	position:relative;
 	display:inline-block;
-	margin-bottom: 30%;
+	margin-bottom: 115px;
 	text-align: center;
 	letter-spacing: 1px;
+	color: #ffffff;
 }
-.record .wrap h1:after{
+.record .wrap h2:after{
 	content:"";
 	position:absolute;
 	bottom: -30px;
@@ -124,6 +119,7 @@ main {
 	color: #c9c9c9;
 	font:400 14px montserrat-bold, sans-serif;
 }
+
 .record .wrap .send .text textarea {
 	padding: 15px 12px;
 	color: #fff;
@@ -165,12 +161,13 @@ select::-ms-expand {
 .record .wrap .send .text  {
 	border: 1px solid #555555;
 	max-width: 400px;
+	width: 100%;
 	text-align: left;
 	color: #c9c9c9;
+
 }
 .record .wrap .send .sub {
-	/*padding: 70px 95px;*/
-	margin-top: 15%;
+	margin-top: 75px;
 	align-items: center;
     justify-content: center;
     display: flex;
@@ -178,6 +175,7 @@ select::-ms-expand {
 .record .wrap .send .submit {
 	font:600 16px montserrat-bold, sans-serif;
 	max-width: 230px;
+	width: 100%;
 	text-align: center;
 	padding: 20px 60px;
 	border: 2px solid #e7c127; 
@@ -194,7 +192,7 @@ select::-ms-expand {
 
 /*vacancii*/
 .vacancy    {
-	padding: 0 0 5% 0;
+	padding-bottom: 75px;
 	position: relative;
 }
 .vacancy .lay {
@@ -207,16 +205,16 @@ select::-ms-expand {
 	background: linear-gradient(to top, rgba(51, 51, 51,0.8), rgba(51, 51, 51,0.8)), url(../img/vakancii.jpg) 50% / cover no-repeat;
 	z-index: -1;
 }
-.vacancy .wrap h1 {
+.vacancy .wrap h2 {
 	font:600 25px montserrat-bold, sans-serif;
 	text-transform: uppercase;
-	margin: 6% 0;
+	margin: 100px 0;
 	text-align: center;
 	color: #ffffff;
 	position: relative;
 	letter-spacing: 1px;
 }
-.vacancy .wrap h1:after{
+.vacancy .wrap h2:after{
 	content:"";
 	position:absolute;
 	bottom: -30px;
@@ -228,7 +226,7 @@ select::-ms-expand {
 }
 .vacancy .wrap p {
 	font:400 16px Montserrat-Medium, sans-serif;
-	margin: 0 18% 7%;
+	margin: 0 260px 85px;
 	text-align: center;
 	color: #ffffff;
 	line-height: 1.5em;
@@ -249,26 +247,24 @@ select::-ms-expand {
 		}
 
 /* about */
-/*.description    {
-	margin: 125px 210px;
-		}*/
+
 .description .wrap  {
 	display: flex;
 	flex-direction: column;
 	color: #918f8f;
 	text-align: center;
 }
-.description .wrap h1 {
+.description .wrap h2 {
 	font:600 25px montserrat-bold, sans-serif;
 	text-transform: uppercase;
 	position:relative;
 	display:inline-block;
-	margin-bottom: 8%;
+	margin-bottom: 120px;
 	text-align: center;
 	letter-spacing: 1px;
 	color: #333333;
 }
-.description .wrap h1:after{
+.description .wrap h2:after{
 	content:"";
 	position:absolute;
 	bottom: -30px;
@@ -281,13 +277,13 @@ select::-ms-expand {
 .description .wrap .content  {
 	max-width: 1170px;
 	width: 100%;
-	margin: 0 10%;
+	margin: 0 170px;
 	display: flex;
 	color: #918f8f;
 }
 .description .wrap .content .img{
 	width: 100%;
-	margin-left: 4.2%;
+	margin-left: 50px;
 	}
 .description .wrap .content .img img{
 	width: 100%;
@@ -296,7 +292,7 @@ select::-ms-expand {
 .description .wrap .content .text  {
 	max-width: 1170px;
 	width: 100%;
-	margin-top: 3%;
+	margin-top: 35px;
 		}
 .description .wrap .content .text p  {
 	color: #918f8f;
@@ -313,7 +309,8 @@ footer .wrap {
 footer .wrap .contact  {
 	color: #918f8f;
 	text-align: center;
-	margin-left: 6%;
+	margin-left: 115px;
+	padding: 65px 0;
 }
 footer .wrap .contact ul.cont li ul.socio a {
 	color: #918f8f;
@@ -348,10 +345,10 @@ footer .wrap .contact ul.cont ul.socio li:not(:first-child):after {
 footer .wrap .contact .cont .graf,
 footer .wrap .contact .cont .adress,
 footer .wrap .contact .cont .ic  {
-margin-top: 15%;
+margin-top: 55px;
 }
 footer .wrap .contact .cont  {
-margin-top: 10%;
+margin-top: 40px;
 }
 footer .wrap .contact .cont .ic .socicon {
 margin-top: 10px;
@@ -366,8 +363,8 @@ footer .context {
 	color: #f1f1f1;
 	transform: rotate(90deg);
 	position: absolute;
-	bottom: 14%;
-	right: -3%;
+	bottom: 430px;
+	right: -70px;
 }
 footer .context:after{
 	content:"";
@@ -396,7 +393,7 @@ footer .copyright a {
 main #toTop {
   position: absolute;
   bottom: 2%;
-  right: 12%;
+  right: 220px;
   width: 70px;
   height: 70px;
   border: 2px solid #e7c127;
@@ -441,8 +438,7 @@ main #toTop:hover {
 
 #map {
 	width: 50%;
-	height: 640px;
-}
+	}
 
 @media screen and (max-width: 1440px) {
 	.record, .vacancy, .description, .record .lay, .vacancy .lay  {
