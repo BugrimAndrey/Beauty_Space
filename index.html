@@ -32,49 +32,59 @@
  });
  
 </script>
+<script type="text/javascript">
+$(document).ready(function () {
+ $('input,textarea').focus(function(){
+   $(this).data('placeholder',$(this).attr('placeholder'))
+   $(this).attr('placeholder','');
+ });
+ $('input,textarea').blur(function(){
+   $(this).attr('placeholder',$(this).data('placeholder'));
+ });
+ });
+</script>
+<script type="text/javascript">
+	$('#datetimepicker').datetimepicker({
+  	lang:'ru'
+	});
+</script>
 
 <main>
     <section class="record">
-    	<div class="lay"></div>
+    	<div class="lay"><img src="img/order.jpg" alt=""></div>
         <div class="wrap">
         	<h2>Запись на приём</h2>
             <form id="record" class="send" action="" method="post">
                 <label class="name">
                     <input type="text" name="first_name" required placeholder="Ваше имя" autocomplete="off">
-                    <div class="icon"><img src="img/svg/user.svg" loading="lazy" alt="" width="18" height="18"></div>
+                    <div class="icon"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 427.16 512"><defs><style>.cls-1{fill:#555;}</style></defs><title>user</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M210.35,246.63c33.88,0,63.22-12.15,87.2-36.13s36.12-53.3,36.12-87.19S321.52,60.1,297.54,36.12,244.23,0,210.35,0s-63.22,12.15-87.19,36.12S87,89.43,87,123.31s12.16,63.23,36.13,87.2S176.48,246.63,210.35,246.63Z"/><path class="cls-1" d="M426.13,393.7A304,304,0,0,0,422,361.35a254.26,254.26,0,0,0-8-32.53,160.71,160.71,0,0,0-13.37-30.33,114.34,114.34,0,0,0-20.16-26.28,89.06,89.06,0,0,0-29-18.2,100.07,100.07,0,0,0-37-6.69c-5.23,0-10.28,2.14-20.05,8.5-6,3.92-13,8.45-20.88,13.46-6.7,4.27-15.79,8.28-27,11.9a104.91,104.91,0,0,1-66.09,0c-11.21-3.62-20.29-7.62-27-11.89-7.77-5-14.8-9.5-20.9-13.47-9.75-6.36-14.81-8.5-20-8.5a99.87,99.87,0,0,0-37,6.7,88.75,88.75,0,0,0-29,18.19A114.74,114.74,0,0,0,26.5,298.49a161.2,161.2,0,0,0-13.38,30.34,257.1,257.1,0,0,0-7.95,32.52A302.88,302.88,0,0,0,1,393.71c-.68,9.8-1,20-1,30.24,0,26.73,8.5,48.36,25.25,64.32C41.8,504,63.69,512,90.32,512H336.85c26.62,0,48.51-8,65.06-23.73,16.76-15.95,25.25-37.59,25.25-64.32C427.16,413.63,426.81,403.45,426.13,393.7Z"/></g></g></svg></div>
                 </label>
                 <label class="tel">
                     <input type="tel" name="tel" required placeholder="Ваш телефон" autocomplete="off">
-                    <div class="icon"><img src="img/svg/phone-2.svg" loading="lazy" alt="" width="18" height="18"></div>
+                    <div class="icon"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 244 387.2"><defs><style>.cls-1{fill:#555;}</style></defs><title>phone-2</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M233.2,10.84v0a36.62,36.62,0,0,0-26-10.8H36.72A36.85,36.85,0,0,0,0,36.72V350.44A36.87,36.87,0,0,0,36.72,387.2H207.28A36.87,36.87,0,0,0,244,350.48V36.76A36.65,36.65,0,0,0,233.2,10.84ZM122,362.28h0a9.92,9.92,0,1,1,9.92-9.92A9.92,9.92,0,0,1,122,362.28ZM214.84,300a24,24,0,0,1-24,24H53.12a24,24,0,0,1-24-24V66.2a24,24,0,0,1,24-24H190.88a24,24,0,0,1,24,24Z"/></g></g></svg></div>
                 </label>
                 <label class="email">
                     <input type="email" name="email" required placeholder="Ваш еmail" autocomplete="off">
-                    <div class="icon"><img src="img/svg/mail.svg" loading="lazy" alt="" width="18" height="18"></div>
+                    <div class="icon"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10"><defs><style>.cls-1{fill:#555;}</style></defs><title>mail</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M7,7,5.27,5.48.32,9.73A1,1,0,0,0,1,10H13a1,1,0,0,0,.69-.27L8.73,5.48Z"/><path class="cls-1" d="M13.68.27A1,1,0,0,0,13,0H1A1,1,0,0,0,.32.27L7,6Z"/><polygon class="cls-1" points="0 0.88 0 9.19 4.83 5.08 0 0.88"/><polygon class="cls-1" points="9.17 5.08 14 9.19 14 0.88 9.17 5.08"/></g></g></svg></div>
                 </label>
                 <label class="service">
                     <select name="" id="select" size="1"  required >
-                        <option class="color" value="Выбор услуги" selected>Выбор услуги</option>
+                        <option class="color" value="Выбор услуги">Выбор услуги</option>
                         <option class="color" value="Маникюр">Маникюр</option>
                         <option class="color" value="Педикюр">Педикюр</option>
                         <option class="color" value="Стрижка">Стрижка</option>
                         <option class="color" value="Макияж">Макияж</option>
                         <option class="color" value="Косметолог">Косметолог</option>
                     </select>
-					
-                    <div class="icon"><div class="blok1" href=""></div></div>
+					<div class="icon"><div class="blok1"></div></div>
                 </label>
                 <label class="date">
                 	<input id="datetimepicker" type="text" name="datetime" value="" required placeholder="Выбор даты" autocomplete="off" format="Выбор даты">
-                	<script>
-					$('#datetimepicker').datetimepicker({
-  					  lang:'ru'
-					});
-					</script>
-                    <div class="icon"><a href=""><img src="img/svg/date.svg" loading="lazy" alt="" width="18" height="18" ></a></div>
+                	<div class="icon"><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><defs><style>.cls-1{fill:#555;}</style></defs><title>date</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M148,288H108a12,12,0,0,1-12-12V236a12,12,0,0,1,12-12h40a12,12,0,0,1,12,12v40A12,12,0,0,1,148,288Zm108-12V236a12,12,0,0,0-12-12H204a12,12,0,0,0-12,12v40a12,12,0,0,0,12,12h40A12,12,0,0,0,256,276Zm96,0V236a12,12,0,0,0-12-12H300a12,12,0,0,0-12,12v40a12,12,0,0,0,12,12h40A12,12,0,0,0,352,276Zm-96,96V332a12,12,0,0,0-12-12H204a12,12,0,0,0-12,12v40a12,12,0,0,0,12,12h40A12,12,0,0,0,256,372Zm-96,0V332a12,12,0,0,0-12-12H108a12,12,0,0,0-12,12v40a12,12,0,0,0,12,12h40A12,12,0,0,0,160,372Zm192,0V332a12,12,0,0,0-12-12H300a12,12,0,0,0-12,12v40a12,12,0,0,0,12,12h40A12,12,0,0,0,352,372Zm96-260V464a48,48,0,0,1-48,48H48A48,48,0,0,1,0,464V112A48,48,0,0,1,48,64H96V12A12,12,0,0,1,108,0h40a12,12,0,0,1,12,12V64H288V12A12,12,0,0,1,300,0h40a12,12,0,0,1,12,12V64h48A48,48,0,0,1,448,112ZM400,458V160H48V458a6,6,0,0,0,6,6H394A6,6,0,0,0,400,458Z"/></g></g></svg></div>
                     
                 </label>
                 <label class="text">
-                    <textarea rows="5" name="message" cols="30" required placeholder="Коментарии/пожелания"></textarea>
+                    <textarea rows="5" type="text" name="message" cols="30" required placeholder="Коментарии/пожелания"></textarea>
                 </label>
                 <div class="sub"> 
                     <input class="submit" type="submit" name="submit" value="Отправить">
@@ -159,7 +169,7 @@
         					<li>
         						<!--<a class="standart18" href=" https://t.me/
 								beauty_space">Telegram</a>-->
-								<a href="https://telegram.im/@beauty_space" target="_blank">Telegram</a>
+								<a class="standart18" href="https://telegram.im/@beauty_space" target="_blank">Telegram</a>
         						<!--<a class="standart18" href="tg://resolve?domain=@beauty_space">Telegram</a>-->
         					</li>
         					<li><a class="standart18" href="https://wa.me/380733231855">WhatsApp</a></li>
@@ -176,9 +186,9 @@
         			<ul class="ic">
         				<li class="standart18">Мы в социальнх сетях:</li>
         				<ul class="socicon">
-        					<li><a class="twit" href=""><img src="img/svg/tw-2.svg" loading="lazy" alt="" width="22" height="20"></a></li>
-        					<li><a href=""><img src="img/svg/insta-2.svg" width="22" height="20" loading="lazy" alt=""></a></li>
-        					<li><a href=""><img src="img/svg/fb-2.svg" width="22" height="20" loading="lazy" alt=""></a></li>
+        					<li><a class="twit" href=""><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 416"><defs><style>.cls-1{fill:#333;}</style></defs><title>tw-2</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M512,49.25a218.64,218.64,0,0,1-60.48,16.57,104.36,104.36,0,0,0,46.18-58,210,210,0,0,1-66.56,25.41A105,105,0,0,0,249.57,105,108,108,0,0,0,252,128.93C164.74,124.67,87.52,82.85,35.65,19.14A105,105,0,0,0,67.9,159.42,103.69,103.69,0,0,1,20.48,146.5v1.15a105.43,105.43,0,0,0,84.1,103.13,104.65,104.65,0,0,1-27.52,3.46,92.77,92.77,0,0,1-19.88-1.79c13.6,41.57,52.2,72.13,98.08,73.12A210.93,210.93,0,0,1,25.12,370.34,197.72,197.72,0,0,1,0,368.9,295.54,295.54,0,0,0,161,416c193.16,0,298.76-160,298.76-298.69,0-4.64-.16-9.12-.39-13.57A209.29,209.29,0,0,0,512,49.25Z"/></g></g></svg></a></li>
+        					<li><a class="inst" href=""><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.39 97.39"><defs><style>.cls-1{fill:#333;}</style></defs><title>insta-2</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M12.5,0H84.89a12.2,12.2,0,0,1,12.5,12.5V84.89a12.2,12.2,0,0,1-12.5,12.5H12.5A12.2,12.2,0,0,1,0,84.89V12.5A12.2,12.2,0,0,1,12.5,0ZM71,10.82a4.4,4.4,0,0,0-4.39,4.39V25.7A4.41,4.41,0,0,0,71,30.09H82a4.4,4.4,0,0,0,4.38-4.39V15.21A4.39,4.39,0,0,0,82,10.82ZM86.39,41.19H77.82a28.51,28.51,0,0,1,1.25,8.35c0,16.2-13.56,29.34-30.28,29.34S18.52,65.74,18.52,49.54a28.46,28.46,0,0,1,1.25-8.35H10.82V82.33A3.89,3.89,0,0,0,14.7,86.2H82.52a3.88,3.88,0,0,0,3.87-3.87V41.19ZM48.79,29.53c-10.8,0-19.56,8.49-19.56,19S38,67.44,48.79,67.44,68.35,59,68.35,48.49,59.59,29.53,48.79,29.53Z"/></g></g></svg></a></li>
+        					<li><a class="fb" href=""><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.97 96.12"><defs><style>.cls-1{fill:#333;}</style></defs><title>fb-2</title><g id="Слой_2" data-name="Слой 2"><g id="Capa_1" data-name="Capa 1"><path class="cls-1" d="M50,0,37.55,0c-14,0-23.06,9.28-23.06,23.66v10.9H2a2,2,0,0,0-2,2V52.33a2,2,0,0,0,2,2H14.49V94.16a2,2,0,0,0,2,2H32.8a2,2,0,0,0,2-2V54.29H49.42a2,2,0,0,0,2-2V36.52a1.94,1.94,0,0,0-.57-1.38,2,2,0,0,0-1.39-.58H34.76V25.32c0-4.45,1.06-6.7,6.85-6.7H50a2,2,0,0,0,2-2V2A2,2,0,0,0,50,0Z"/></g></g></svg></a></li>
         				</ul>
 					</ul>
         		</ul>
@@ -189,9 +199,9 @@
    
     <div class="context">Контакты</div>
     <div class="copyright"><a href="">Copyright © 2020 Beauty space. Все права защищены</a></div>
-
+	<div id="toTop" class="arrow-1"><div></div></div>
     </footer>
-    <div id="toTop" class="arrow-1"><div></div></div>
+    
 	
 </main>
 

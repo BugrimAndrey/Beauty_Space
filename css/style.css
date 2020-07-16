@@ -51,16 +51,21 @@ main {
 }
 
 /* record */
+
 .record .lay {
 	position: absolute;
 	left: 0;
 	top: 50%;
 	width: 100%;
-	height: 85%;
+	height: 78%;
 	transform:translate(0,-50%);
-	background: url(../img/order.jpg) 50% / cover no-repeat;
 	z-index: -1;
-}
+	overflow: hidden; 
+	}
+.record:hover .lay img {
+   	transition: all 1s linear;
+    transform: scale(1.2); 
+   }
 .record .wrap  {
 	max-width: 500px;
 	width: 100%;
@@ -120,6 +125,27 @@ main {
 	font:400 14px montserrat-bold, sans-serif;
 }
 
+input:hover::-webkit-input-placeholder {
+	transition: all .3s linear;
+    color: #fff;
+    fill:#ffffff;
+   } 
+ input:hover .record .wrap .send .icon svg path.cls-1  {
+	fill:#ffffff;
+   } 
+ textarea:hover::-webkit-input-placeholder {
+ 	transition: all .3s linear;
+    color: #fff;
+   } 
+input:hover + .icon path.cls-1 {
+	transition: all .3s linear;
+	fill:#ffffff;
+	}
+.record .wrap .send .service:hover  .icon .blok1 {
+	transition: all .3s linear;
+	border: 9px solid transparent;
+	border-top: 9px solid #ffffff;
+	}
 .record .wrap .send .text textarea {
 	padding: 15px 12px;
 	color: #fff;
@@ -151,8 +177,8 @@ select::-ms-expand {
 	background: #555555;
 }
 .record .wrap .send .service .icon .blok1  {
-	border: 7px solid transparent;
-	border-top: 7px solid #555555;
+	border: 9px solid transparent;
+	border-top: 9px solid #555555;
 	display: block;
 	width: 0;
 	height: 0;
@@ -182,6 +208,11 @@ select::-ms-expand {
 	color: #ffffff;
 	background-color: #333333;
 	}
+.record .wrap .send .submit:hover, .vacancy .wrap .submit:hover {
+	transition: all .3s linear;
+	background-color:  #e7c127;
+	}
+
 .record .wrap .send .name, 
 .record .wrap .send .tel, 
 .record .wrap .send .email, 
@@ -202,9 +233,25 @@ select::-ms-expand {
 	width: 100%;
 	height: 100%;
 	transform:translate(0,-50%);
-	background: linear-gradient(to top, rgba(51, 51, 51,0.8), rgba(51, 51, 51,0.8)), url(../img/vakancii.jpg) 50% / cover no-repeat;
+	background: linear-gradient(to top, rgba(51, 51, 51,0.8), rgba(51, 51, 51,0.8)), url(../img/vakancii.jpg) 50% / cover no-repeat;;
 	z-index: -1;
+	overflow: hidden; 
 }
+.vacancy .lay:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(51, 51, 51,0.8), rgba(51, 51, 51,0.8)), 
+	url(../img/vakancii.jpg) 50% / cover no-repeat;
+	}
+.vacancy:hover .lay:before {
+	transition: all 1s linear;
+    transform: scale(1.2);
+}
+
 .vacancy .wrap h2 {
 	font:600 25px montserrat-bold, sans-serif;
 	text-transform: uppercase;
@@ -246,6 +293,7 @@ select::-ms-expand {
 	color: #ffffff;
 		}
 
+
 /* about */
 
 .description .wrap  {
@@ -284,11 +332,19 @@ select::-ms-expand {
 .description .wrap .content .img{
 	width: 100%;
 	margin-left: 50px;
+	overflow: hidden; 
 	}
 .description .wrap .content .img img{
 	width: 100%;
 	height: 100%;
 	}
+
+.img:hover .img img {
+   	transition: all 1s linear;
+    transform: scale(1.2); 
+   }
+
+
 .description .wrap .content .text  {
 	max-width: 1170px;
 	width: 100%;
@@ -325,6 +381,11 @@ footer .wrap .contact .cont .standart18  {
 	color: #4e484a;
 	line-height: 1.5em;
 	}
+footer .wrap .contact .cont .standart18:hover, 
+footer .wrap .contact .cont .bold20:hover    {
+	transition: all .3s linear;
+	color:  #e7c127;
+	}
 footer .wrap .contact .cont .bold20  {
 	font:600 20px Montserrat-Medium, sans-serif;
 	color: #4e484a;
@@ -353,7 +414,11 @@ margin-top: 40px;
 footer .wrap .contact .cont .ic .socicon {
 margin-top: 10px;
 }
-	
+.twit:hover path.cls-1, .inst:hover path.cls-1,  
+.fb:hover path.cls-1{
+	transition: all .3s linear;
+	fill: #e7c127;
+	}
 footer .context {
 	font:800 100px montserrat-bold, sans-serif;
 	text-transform: uppercase;
@@ -375,7 +440,6 @@ footer .context:after{
 	height:2px;
 	background:#333333;
 }
-
 footer .copyright {
 	max-width: 1920px;
 	width: 100%;
@@ -389,7 +453,6 @@ footer .copyright a {
 	color: #ffffff;
 	font: 400 14px montserrat, sans-serif;
 }
-
 main #toTop {
   position: absolute;
   bottom: 2%;
@@ -433,7 +496,8 @@ main .arrow-1 div::before {
     transform: rotate(-135deg);
 }
 main #toTop:hover {
-  box-shadow: 0 0 5px 10px rgba(231,193,39, 0.4);  
+	transition: all .3s linear;
+	box-shadow: 5px 6px 10px -7px #000;  
 }
 
 #map {
