@@ -35,7 +35,7 @@ main {
 .record, .vacancy, .description {
 	max-width: 1500px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 90px auto;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -46,7 +46,7 @@ main {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	margin: 90px 210px;
+	/*margin: 90px 210px;*/
 	position: relative;
 }
 
@@ -124,15 +124,11 @@ main {
 	color: #c9c9c9;
 	font:400 14px montserrat-bold, sans-serif;
 }
-
 input:hover::-webkit-input-placeholder {
 	transition: all .3s linear;
     color: #fff;
-    fill:#ffffff;
    } 
- input:hover .record .wrap .send .icon svg path.cls-1  {
-	fill:#ffffff;
-   } 
+
  textarea:hover::-webkit-input-placeholder {
  	transition: all .3s linear;
     color: #fff;
@@ -162,6 +158,7 @@ select::-ms-expand {
 .record .wrap .send .icon {
 	margin: 18px 20px;
 	position:relative;
+	color: #555555;
 }
 .record .wrap .send .name .icon:after, 
 .record .wrap .send .tel .icon:after,
@@ -338,13 +335,10 @@ select::-ms-expand {
 	width: 100%;
 	height: 100%;
 	}
-
-.img:hover .img img {
+.img:hover img {
    	transition: all 1s linear;
     transform: scale(1.2); 
    }
-
-
 .description .wrap .content .text  {
 	max-width: 1170px;
 	width: 100%;
@@ -384,7 +378,7 @@ footer .wrap .contact .cont .standart18  {
 footer .wrap .contact .cont .standart18:hover, 
 footer .wrap .contact .cont .bold20:hover    {
 	transition: all .3s linear;
-	color:  #e7c127;
+	color:  #e7c127; 
 	}
 footer .wrap .contact .cont .bold20  {
 	font:600 20px Montserrat-Medium, sans-serif;
@@ -504,80 +498,137 @@ main #toTop:hover {
 	width: 50%;
 	}
 
-@media screen and (max-width: 1440px) {
-	.record, .vacancy, .description, .record .lay, .vacancy .lay  {
+@media screen and (max-width: 1600px) {
+.record, .vacancy, .description {
 	width: 90%;
 	}
-	.description .wrap .content  {
-	width: 80%;
-	margin: 0;
+.description .wrap .content  {
+	margin-left: 100px;
 	}
 	footer .context {
-	font:800 80px montserrat-bold, sans-serif;
-	position: absolute;
-	bottom: 13%;
-	right: -7%;
+	font:800 90px montserrat-bold, sans-serif;
+	bottom: 430px;
+	right: -150px;
 }
 main #toTop {
-  bottom: 2%;
-  right: 9%;
+    right: 110px;
   }
-#map {
-	height: 540px;
-	 }
+}
+@media screen and (max-width: 1440px) {
+.description .wrap .content  {
+	width: 80%;
+		}
+footer .context {
+font:800 80px montserrat-bold, sans-serif;
+right: -150px;
+}
+main #toTop {
+  right: 70px;
+  }
+
 }
 @media screen and (max-width: 1366px) {
-.description .wrap .content  {
-	width: 80%;
-	margin: 0;
-	}
-	footer .context {
-	font:800 70px montserrat-bold, sans-serif;
-	position: absolute;
-	bottom: 13%;
-	right: -5%;
+footer .context {
+	right: -160px;
 }
-#map {
-	height: 520px;
-	 }
+footer .wrap .contact  {
+	padding: 40px 0;
+	}
 }
 @media screen and (max-width: 1201px) {
+	/*.record, .vacancy, .description {
+	margin: 70px auto;
+	}*/
 .description .wrap .content  {
-	width: 80%;
-	margin: 0;
+	margin-left: 50px;
 	}
 .record .wrap  {
-	max-width: 350px;
-	width: 80%;
-	padding: 4% 2% 3% 2%;
-	margin-left: 7%;
+	max-width: 380px;
+	width: 90%;
+	padding: 40px 30px 40px 30px;
+	margin-left: 80px;
 }
-.record .wrap h1, .vacancy .wrap h1, .description .wrap h1  {
+.record .wrap .send .sub {
+	margin-top: 40px;
+			}
+.record .wrap h2, .vacancy .wrap h2, .description .wrap h2  {
 	font:600 20px montserrat-bold, sans-serif;
 		}
-
 .description .wrap .content .img{
 	max-width: 70%;
 	width: 100%;
 	height: 100%;
-	margin-left: 4.2%;
+	margin-left: 20px;
 }
 .description .wrap .content .text  {
 	margin-top: 0;
 		}
 footer .context {
 	font:800 65px montserrat-bold, sans-serif;
-	position: absolute;
 	bottom: 13%;
 	right: -6%;
 }
 footer .wrap .contact .cont .graf,
 footer .wrap .contact .cont .adress,
 footer .wrap .contact .cont .ic  {
-margin-top: 8%;
+margin-top: 30px;
+}
+footer .wrap .contact  {
+	margin-left: 50px;
+	}
+main #toTop {
+  right: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+.record .wrap  {
+	max-width: 350px;
+	width: 90%;
+	padding: 40px 30px 20px 30px;
+	margin-left: 80px;
+}
+.record .wrap h2 {
+    margin-bottom: 75px;
+    }
+.record .wrap .send .name, 
+.record .wrap .send .tel, 
+.record .wrap .send .email, 
+.record .wrap .send .service, 
+.record .wrap .send .date  {
+	height: 50px;
+}
+.record .wrap .send .sub {
+	margin-top: 20px;
+			}
+.record .wrap h2, .vacancy .wrap h2, .description .wrap h2  {
+	font:600 18px montserrat-bold, sans-serif;
+		}
+.record .wrap .send .name .icon:after, 
+.record .wrap .send .tel .icon:after,
+.record .wrap .send .email .icon:after,
+.record .wrap .send .service .icon:after,
+.record .wrap .send .date .icon:after {
+	bottom: -5px;
+	height:20px;
+}
+.description .wrap .content {
+    width: 85%;
+}
+.description .wrap h2  {
+    margin-bottom: 90px;
+    }
+.description .wrap .content .img{
+	width: 120%;
+	}
+.vacancy .wrap p {
+    margin: 0 120px 85px;
 }
 
-#map {
-	height: 500px;
-	 }
+footer .context {
+	right: -120px;
+}
+
+main #toTop {
+  right: 55px;
+  }
 }
