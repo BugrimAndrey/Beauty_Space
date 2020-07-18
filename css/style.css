@@ -597,6 +597,14 @@ main #toTop {
 .record .wrap .send .date  {
 	height: 50px;
 }
+.record .wrap .send .name input, 
+.record .wrap .send .tel input,
+.record .wrap .send .email input,
+.record .wrap .send .service select,
+.record .wrap .send .date input,
+.record .wrap .send .text textarea {
+	font:400 16px montserrat-bold, sans-serif;
+}
 .record .wrap .send .sub {
 	margin-top: 20px;
 			}
@@ -621,9 +629,9 @@ main #toTop {
 	width: 120%;
 	}
 .vacancy .wrap p {
+	font:400 14px Montserrat-Medium, sans-serif;
     margin: 0 120px 85px;
 }
-
 footer .context {
 	right: -120px;
 }
