@@ -19,7 +19,6 @@
 
 body, a {
 	font: 400 14px montserrat, sans-serif;
-	
 }
 a {
 	text-decoration: none;
@@ -46,12 +45,9 @@ main {
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	/*margin: 90px 210px;*/
 	position: relative;
 }
-
 /* record */
-
 .record .lay {
 	position: absolute;
 	left: 0;
@@ -124,12 +120,14 @@ main {
 	color: #c9c9c9;
 	font:400 14px montserrat-bold, sans-serif;
 }
+.icon path.cls-1 {
+	fill:#555555;
+	}
 input:hover::-webkit-input-placeholder {
 	transition: all .3s linear;
     color: #fff;
    } 
-
- textarea:hover::-webkit-input-placeholder {
+textarea:hover::-webkit-input-placeholder {
  	transition: all .3s linear;
     color: #fff;
    } 
@@ -290,9 +288,7 @@ select::-ms-expand {
 	color: #ffffff;
 		}
 
-
 /* about */
-
 .description .wrap  {
 	display: flex;
 	flex-direction: column;
@@ -449,7 +445,7 @@ footer .copyright a {
 }
 main #toTop {
   position: absolute;
-  bottom: 2%;
+  bottom: 60px;
   right: 220px;
   width: 70px;
   height: 70px;
@@ -493,11 +489,9 @@ main #toTop:hover {
 	transition: all .3s linear;
 	box-shadow: 5px 6px 10px -7px #000;  
 }
-
 #map {
 	width: 50%;
 	}
-
 @media screen and (max-width: 1600px) {
 .record, .vacancy, .description {
 	width: 90%;
@@ -536,9 +530,6 @@ footer .wrap .contact  {
 	}
 }
 @media screen and (max-width: 1201px) {
-	/*.record, .vacancy, .description {
-	margin: 70px auto;
-	}*/
 .description .wrap .content  {
 	margin-left: 50px;
 	}
