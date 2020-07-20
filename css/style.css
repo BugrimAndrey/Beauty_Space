@@ -1,7 +1,7 @@
 @font-face {
 	font-family: montserrat;
 	src: url('../fonts/Montserrat-Black.otf') format('otf'),
-	url('../fonts/Montserrat-Black.ttf') format('truetype'),
+	url('../fonts/Montserrat-Black.ttf') format('truetype');
 	font-weight: 400;
 }
 @font-face {
@@ -135,6 +135,14 @@ input:hover + .icon path.cls-1 {
 	transition: all .3s linear;
 	fill:#ffffff;
 	}
+input:hover + .icon polygon.cls-1 {
+	transition: all .3s linear;
+	fill:#ffffff;
+	}
+
+polygon.cls-1 {
+	fill:#555555;
+	}
 .record .wrap .send .service:hover  .icon .blok1 {
 	transition: all .3s linear;
 	border: 9px solid transparent;
@@ -267,7 +275,7 @@ select::-ms-expand {
 	background:#ffffff;
 }
 .vacancy .wrap p {
-	font:400 16px Montserrat-Medium, sans-serif;
+	font:400 16px Montserrat, sans-serif;
 	margin: 0 260px 85px;
 	text-align: center;
 	color: #ffffff;
@@ -501,8 +509,7 @@ main #toTop:hover {
 	}
 	footer .context {
 	font:800 90px montserrat-bold, sans-serif;
-	bottom: 430px;
-	right: -150px;
+	right: -70px;
 }
 main #toTop {
     right: 110px;
@@ -620,7 +627,7 @@ main #toTop {
 	width: 120%;
 	}
 .vacancy .wrap p {
-	font:400 14px Montserrat-Medium, sans-serif;
+	font:400 14px Montserrat, sans-serif;
     margin: 0 120px 85px;
 }
 footer .context {
