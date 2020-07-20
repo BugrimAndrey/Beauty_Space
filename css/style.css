@@ -509,7 +509,7 @@ main #toTop:hover {
 	}
 	footer .context {
 	font:800 90px montserrat-bold, sans-serif;
-	right: 50px;
+	right: 110px;
 }
 main #toTop {
     right: 110px;
@@ -631,7 +631,7 @@ main #toTop {
     margin: 0 120px 85px;
 }
 footer .context {
-	right: -120px;
+	right: 55px;
 }
 
 main #toTop {
