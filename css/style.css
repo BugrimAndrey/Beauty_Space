@@ -510,7 +510,7 @@ main #toTop:hover {
 	footer .context {
 	font:800 90px montserrat-bold, sans-serif;
 	bottom: 400px;
-	right: -100px;
+	right: -120px;
 }
 main #toTop {
     right: 110px;
@@ -523,7 +523,7 @@ main #toTop {
 footer .context {
 font:800 80px montserrat-bold, sans-serif;
 bottom: 350px;
-right: -150px;
+right: -110px;
 }
 main #toTop {
   right: 70px;
@@ -532,7 +532,7 @@ main #toTop {
 }
 @media screen and (max-width: 1366px) {
 footer .context {
-	right: -130px;
+	right: -100px;
 }
 footer .wrap .contact  {
 	padding: 40px 0;
@@ -633,7 +633,7 @@ main #toTop {
     margin: 0 120px 85px;
 }
 footer .context {
-	right: -60px;
+	right: -80px;
 }
 
 main #toTop {
