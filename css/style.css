@@ -509,7 +509,8 @@ main #toTop:hover {
 	}
 	footer .context {
 	font:800 90px montserrat-bold, sans-serif;
-	right: 0px;
+	bottom: 400px;
+	right: -150px;
 }
 main #toTop {
     right: 110px;
@@ -521,6 +522,7 @@ main #toTop {
 		}
 footer .context {
 font:800 80px montserrat-bold, sans-serif;
+bottom: 350px;
 right: -150px;
 }
 main #toTop {
@@ -563,7 +565,7 @@ footer .wrap .contact  {
 		}
 footer .context {
 	font:800 65px montserrat-bold, sans-serif;
-	bottom: 13%;
+	bottom: 330px;
 	right: -6%;
 }
 footer .wrap .contact .cont .graf,
@@ -627,11 +629,11 @@ main #toTop {
 	width: 120%;
 	}
 .vacancy .wrap p {
-	font:400 14px Montserrat, sans-serif;
+	font:400 12px Montserrat, sans-serif;
     margin: 0 120px 85px;
 }
 footer .context {
-	right: -70px;
+	right: -100px;
 }
 
 main #toTop {
