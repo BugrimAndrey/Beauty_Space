@@ -57,10 +57,13 @@ main {
 	transform:translate(0,-50%);
 	z-index: -1;
 	overflow: hidden; 
+	transition: all 1s linear;
+	}
+	.record .lay img {
+	transition: all 1s linear;
 	}
 .record:hover .lay img {
-   	transition: all 1s linear;
-    transform: scale(1.2); 
+   	transform: scale(1.2); 
    }
 .record .wrap  {
 	max-width: 500px;
@@ -139,12 +142,10 @@ input:hover + .icon polygon.cls-1 {
 	transition: all .3s linear;
 	fill:#ffffff;
 	}
-
 polygon.cls-1 {
 	fill:#555555;
 	}
 .record .wrap .send .service:hover  .icon .blok1 {
-	transition: all .3s linear;
 	border: 9px solid transparent;
 	border-top: 9px solid #ffffff;
 	}
@@ -186,6 +187,7 @@ select::-ms-expand {
 	width: 0;
 	height: 0;
 	margin-top: 5px; 
+	transition: all .3s linear;
 }
 .record .wrap .send .text  {
 	border: 1px solid #555555;
@@ -210,9 +212,9 @@ select::-ms-expand {
 	border: 2px solid #e7c127; 
 	color: #ffffff;
 	background-color: #333333;
+	transition: all .3s linear;
 	}
 .record .wrap .send .submit:hover, .vacancy .wrap .submit:hover {
-	transition: all .3s linear;
 	background-color:  #e7c127;
 	}
 
@@ -249,10 +251,10 @@ select::-ms-expand {
 	height: 100%;
 	background: linear-gradient(to top, rgba(51, 51, 51,0.8), rgba(51, 51, 51,0.8)), 
 	url(../img/vakancii.jpg) 50% / cover no-repeat;
+	transition: all 1s linear;
 	}
 .vacancy:hover .lay:before {
-	transition: all 1s linear;
-    transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .vacancy .wrap h2 {
@@ -294,6 +296,7 @@ select::-ms-expand {
 	padding: 20px 60px;
 	border: 2px solid #e7c127; 
 	color: #ffffff;
+	transition: all .3s linear;
 		}
 
 /* about */
@@ -338,10 +341,10 @@ select::-ms-expand {
 .description .wrap .content .img img{
 	width: 100%;
 	height: 100%;
+	transition: all 1s linear;
 	}
 .img:hover img {
-   	transition: all 1s linear;
-    transform: scale(1.2); 
+   	transform: scale(1.2); 
    }
 .description .wrap .content .text  {
 	max-width: 1170px;
@@ -510,7 +513,7 @@ main #toTop:hover {
 	footer .context {
 	font:800 90px montserrat-bold, sans-serif;
 	bottom: 400px;
-	right: -120px;
+	right: -150px;
 }
 main #toTop {
     right: 110px;
@@ -522,8 +525,8 @@ main #toTop {
 		}
 footer .context {
 font:800 80px montserrat-bold, sans-serif;
-bottom: 350px;
-right: -110px;
+bottom: 370px;
+right: -150px;
 }
 main #toTop {
   right: 70px;
@@ -532,7 +535,7 @@ main #toTop {
 }
 @media screen and (max-width: 1366px) {
 footer .context {
-	right: -100px;
+	right: -150px;
 }
 footer .wrap .contact  {
 	padding: 40px 0;
@@ -554,6 +557,9 @@ footer .wrap .contact  {
 .record .wrap h2, .vacancy .wrap h2, .description .wrap h2  {
 	font:600 20px montserrat-bold, sans-serif;
 		}
+.vacancy .wrap p {
+	margin: 0 120px 85px;
+}
 .description .wrap .content .img{
 	max-width: 70%;
 	width: 100%;
@@ -597,6 +603,9 @@ main #toTop {
 .record .wrap .send .date  {
 	height: 50px;
 }
+.record .wrap .send .icon {
+    margin: 17px 18px;
+    }
 .record .wrap .send .name input, 
 .record .wrap .send .tel input,
 .record .wrap .send .email input,
@@ -608,6 +617,10 @@ main #toTop {
 .record .wrap .send .sub {
 	margin-top: 20px;
 			}
+.record .wrap .send .icon {
+	margin: 18px 20px;
+	
+}
 .record .wrap h2, .vacancy .wrap h2, .description .wrap h2  {
 	font:600 18px montserrat-bold, sans-serif;
 		}
@@ -629,9 +642,8 @@ main #toTop {
 	width: 120%;
 	}
 .vacancy .wrap p {
-	font:400 12px Montserrat, sans-serif;
-    margin: 0 120px 85px;
-}
+	font:400 14px Montserrat, sans-serif;
+    }
 footer .context {
 	right: -120px;
 }
@@ -639,4 +651,197 @@ footer .context {
 main #toTop {
   right: 55px;
   }
+}
+@media screen and (max-width: 922px) {
+.record, .vacancy, .description {
+       margin: 70px auto;
+   }
+.vacancy .wrap p {
+    margin: 0 100px 65px;
+}
+.description .wrap .content .img{
+	width: 100%;
+	}
+footer .context {
+	right: -140px;
+}
+footer .wrap .contact .cont .graf,
+footer .wrap .contact .cont .adress,
+footer .wrap .contact .cont .ic  {
+margin-top: 20px;
+}
+footer .wrap .contact  {
+	margin-left: 30px;
+	}
+main #toTop {
+  right: 35px;
+  }
+  footer .wrap .contact .cont {
+    margin-top: 20px;
+}
+footer .wrap .contact  {
+	padding: 20px 0;
+	}
+}
+@media screen and (max-width: 768px) {
+footer .context {
+	font:800 50px montserrat-bold, sans-serif;
+	right: -120px;
+	bottom: 280px;
+}
+footer .context:after{
+	left:-40%;
+}
+main #toTop {
+  bottom: 60px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  }
+main .arrow-1 div {
+    top: 12px;
+    left:23px;
+    height: 22px;
+   }
+footer .wrap .contact .cont .standart18  {
+	font:400 16px Montserrat-Medium, sans-serif;
+		}
+footer .wrap .contact .cont .bold20  {
+	font:600 18px Montserrat-Medium, sans-serif;
+		}
+}
+@media screen and (max-width: 480px) {
+.record, .vacancy, .description {
+       margin: 50px auto;
+   }
+.record .wrap {
+    max-width: 250px;
+    width: 90%;
+    padding: 20px 15px;
+    margin-left: 30px;
+}
+.record .wrap h2:after, 
+.vacancy .wrap h2:after, 
+.description .wrap h2:after{
+	bottom: -15px;
+}
+.record .wrap h2 {
+    margin-bottom: 35px;
+    }
+.record .wrap .send .name, 
+.record .wrap .send .tel, 
+.record .wrap .send .email, 
+.record .wrap .send .service, 
+.record .wrap .send .date  {
+	height: 30px;
+}
+.record .wrap .send .icon {
+    margin: 5px 7px;
+}
+.record .wrap .send .name input, 
+.record .wrap .send .tel input,
+.record .wrap .send .email input,
+.record .wrap .send .service select,
+.record .wrap .send .date input,
+.record .wrap .send .text textarea {
+	font:400 14px montserrat-bold, sans-serif;
+}
+.record .wrap .send .sub {
+	margin-top: 15px;
+			}
+.record .wrap h2, .vacancy .wrap h2, .description .wrap h2  {
+	font:600 16px montserrat-bold, sans-serif;
+		}
+.record .wrap .send .name .icon:after, 
+.record .wrap .send .tel .icon:after,
+.record .wrap .send .email .icon:after,
+.record .wrap .send .service .icon:after,
+.record .wrap .send .date .icon:after {
+	bottom: 2px;
+	left:-10px;
+	height:13px;
+}
+.record .wrap .send .sub {
+	margin-top: 15px;
+		}
+.record .wrap .send .submit, .vacancy .wrap .submit {
+	font:600 16px montserrat-bold, sans-serif;
+	max-width: 150px;
+	padding: 10px 30px;
+		}
+.vacancy {
+    padding-bottom: 45px;
+}
+.vacancy .wrap p {
+	font:400 14px Montserrat, sans-serif;
+	margin: 0 50px 50px;
+		}
+.vacancy .wrap h2 {
+	margin: 50px 0;
+	}
+	.description .wrap  {
+	display: flex;
+	flex-direction: column;
+	color: #918f8f;
+	text-align: center;
+}
+.description .wrap .content {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+}
+.description .wrap h2  {
+    margin-bottom: 20px;
+    }
+.description .wrap .content .img{
+	width: 120%;
+	}
+	.description .wrap .content  {
+	max-width: 480px;
+	width: 90%;
+	margin: 0 20px;
+	}
+.description .wrap .content .img{
+	width: 120%;
+	margin: 0 auto;
+		}
+.description .wrap .content .img img{
+	width: 120%;
+	height: 120%;
+	}
+.description .wrap .content .text  {
+	max-width: 480px;
+	width: 90%;
+	margin: 15px auto; 
+			}
+.description .wrap .content .text p  {
+		text-align: center;
+	}
+footer .wrap {
+	flex-direction: column;
+}
+footer .context {
+	right: -100px;
+	bottom: 750px;
+}
+main #toTop {
+  right: 35px;
+  }
+  #map {
+	width: 90%;
+	margin: 40px auto;
+	height: 450px;
+		}
+
+.wrap #map:nth-child(1) {
+  order: 2;
+}
+.wrap .contact:nth-child(2) {
+  order: 1;
+}
+}
+@media screen and (max-width: 370px) {
+footer .context {
+	right: -130px;
+}
 }
